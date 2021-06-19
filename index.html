@@ -20,7 +20,19 @@
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 10vw;
 }
-		
+
+  .legend {
+	grid-area: legend;
+	background-color: rgba(84,204,255,0.80);
+	color: #FFFFFF;
+	border: thin solid #5B5B5B;
+	word-spacing: 10%;
+	font-weight: bolder;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 6vw;
+  }
+	
 	.main {grid-area: main;	
 	text-align: center;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -30,8 +42,9 @@
 		
 		.grid-container {
 	display: grid;
-	grid-template-areas: 'header header header header header header'
-    						'main main main main main main';
+	grid-template-areas: 'header'
+                'legend main main'    						
+                'legend main main';
 	grid-gap: 1px;
 	background-color: #FFFFFF;
 	padding: 1px;
@@ -70,7 +83,7 @@
 <body>
 	<div class="grid-container">
 		<div class="header">actual size map</div>
-		<div class="main">these are the words</div>
+		<div class="legend">legend</div>
 	</div>
  	
 	
